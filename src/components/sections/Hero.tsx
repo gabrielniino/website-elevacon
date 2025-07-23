@@ -7,13 +7,6 @@ import InfiniteBrandsCarousel from '../ui/hero/infinity-brands-hero';
 
 const Hero = () => {
 
-    const stats = [
-        { icon: Users, number: '500+', label: 'Clientes Ativos' },
-        { icon: Award, number: '15+', label: 'Anos de Experiência' },
-        { icon: TrendingUp, number: '98%', label: 'Satisfação do Cliente' },
-        { icon: Shield, number: '100%', label: 'Conformidade Fiscal' }
-    ];
-
     return (
         <section className="relative min-h-screen flex flex-col justify-between bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 overflow-hidden">
             {/* Background Elements */}
@@ -25,7 +18,7 @@ const Hero = () => {
 
             {/* Main Content */}
             <div className="relative z-10 flex-1 flex items-center">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         {/* Left Content */}
                         <div className="text-center lg:text-left">
@@ -91,31 +84,6 @@ const Hero = () => {
                                 </motion.button>
                             </motion.div>
 
-                            {/* Stats */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 30 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                                className="grid grid-cols-2 lg:grid-cols-4 gap-6"
-                            >
-                                {stats.map((stat, index) => (
-                                    <motion.div
-                                        key={stat.label}
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                                        className="text-center lg:text-left"
-                                    >
-                                        <div className="flex items-center justify-center lg:justify-start mb-2">
-                                            <stat.icon className="w-6 h-6 text-blue-600 mr-2" />
-                                            <span className="text-2xl lg:text-3xl font-bold text-gray-900">
-                                                {stat.number}
-                                            </span>
-                                        </div>
-                                        <p className="text-sm text-gray-600 font-medium">{stat.label}</p>
-                                    </motion.div>
-                                ))}
-                            </motion.div>
                         </div>
 
                         {/* Right Content - Visual Element */}
