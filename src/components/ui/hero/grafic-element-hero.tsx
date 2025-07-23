@@ -99,7 +99,7 @@ export default function GraphicElement3D() {
                             <motion.div
                                 animate={{ rotate: 360 }}
                                 transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                                className="w-96 h-96 rounded-full bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 opacity-20"
+                                className="w-96 h-96 rounded-full bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 opacity-20" 
                             />
                         </CardItem>
 

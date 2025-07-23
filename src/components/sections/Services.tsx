@@ -213,16 +213,6 @@ export default function ServicesSection() {
                                         </li>
                                     ))}
                                 </ul>
-
-                                {/* CTA */}
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className={`w-full bg-gradient-to-r ${service.color} text-white py-3 px-6 rounded-xl font-medium flex items-center justify-center space-x-2 hover:shadow-lg transition-all duration-300`}
-                                >
-                                    <span>Saiba mais</span>
-                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                </motion.button>
                             </div>
                         </motion.div>
                     ))}
