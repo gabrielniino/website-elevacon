@@ -3,8 +3,8 @@ import React from "react";
 const clientLogos = [
     { name: "Google", logo: "/google.webp" },
     { name: "Microsoft", logo: "/microsoft.webp" },
-    { name: "Acertinity", logo: "/acertinity-ui.webp" },
-    { name: "Asteroid", logo: "/asteroid-kit-ui.webp" },
+    { name: "Aceternity", logo: "/aceternity-ui.webp" },
+    { name: "Asteroid", logo: "/asteroid-kit.webp" },
     { name: "Gamity", logo: "/gamity.webp" },
     { name: "Hostit", logo: "/hostit.webp" },
 ];
@@ -13,12 +13,12 @@ export default function InfiniteBrandsCarousel() {
     return (
         <div className="flex items-center justify-center">
             <div className="relative z-10 backdrop-blur-sm w-full">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                     {/* Infinite Scrolling Container */}
                     <div className="relative overflow-hidden">
                         {/* Gradient masks para suavizar as bordas */}
-                        <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white/80 to-transparent z-10 pointer-events-none" />
-                        <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white/80 to-transparent z-10 pointer-events-none" />
+                        <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r to-transparent z-10 pointer-events-none" />
+                        <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l to-transparent z-10 pointer-events-none" />
 
                         {/* Scrolling wrapper */}
                         <div className="flex space-x-8 animate-scroll">
@@ -28,7 +28,7 @@ export default function InfiniteBrandsCarousel() {
                                     key={client.name}
                                     className="flex-shrink-0 flex items-center justify-center group cursor-pointer"
                                 >
-                                    <div className="w-24 h-16 bg-gray-100 rounded-xl flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-300 shadow-sm group-hover:shadow-md hover:scale-110 p-3">
+                                    <div className="w-30 h-20 rounded-xl flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-300 hover:scale-110 p-3">
                                         <img
                                             src={client.logo}
                                             alt={client.name}
@@ -54,7 +54,7 @@ export default function InfiniteBrandsCarousel() {
                                     key={`duplicate-${client.name}`}
                                     className="flex-shrink-0 flex items-center justify-center group cursor-pointer"
                                 >
-                                    <div className="w-24 h-16 bg-gray-100 rounded-xl flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-300 shadow-sm group-hover:shadow-md hover:scale-110 p-3">
+                                    <div className="w-30 h-20 rounded-xl flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-300 hover:scale-110 p-3">
                                         <img
                                             src={client.logo}
                                             alt={client.name}
@@ -74,13 +74,6 @@ export default function InfiniteBrandsCarousel() {
                                 </div>
                             ))}
                         </div>
-                    </div>
-
-                    {/* Animated Text */}
-                    <div className="text-center mt-8">
-                        <p className="text-sm text-gray-500">
-                            Junte-se a mais de 500 empresas que já elevaram seus resultados conosco
-                        </p>
                     </div>
                 </div>
 
