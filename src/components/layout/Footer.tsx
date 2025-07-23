@@ -80,7 +80,7 @@ export default function Footer() {
                         >
                             <div className="mb-6">
                                 <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-                                    SuaMarca
+                                    ElevaCon
                                 </h2>
                                 <p className="text-gray-300 text-sm leading-relaxed mb-6">
                                     Transformamos ideias em soluções digitais inovadoras.

@@ -3,6 +3,8 @@ import ServicesSection from '@/components/sections/Services'
 import AboutUsSection from '@/components/sections/About'
 import React from 'react'
 import TestimonialsSection from '@/components/sections/Testimonials'
+import ContactSection from '@/components/sections/Contact'
+import FAQSection from '@/components/sections/faqSection'
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <ServicesSection />
       <AboutUsSection />
       <TestimonialsSection />
+      <FAQSection />
+      <ContactSection />
     </>
   )
 }
