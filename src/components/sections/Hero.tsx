@@ -2,19 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, TrendingUp, Shield, Users, Award } from 'lucide-react';
+import GraphicElement3D from '../ui/hero/grafic-element-hero';
+import InfiniteBrandsCarousel from '../ui/hero/infinity-brands-hero';
 
 const Hero = () => {
-    // Logos dos clientes (placeholder - substitua pelas logos reais)
-    const clientLogos = [
-        { name: 'TechCorp', logo: '🏢' },
-        { name: 'InnovaSoft', logo: '💻' },
-        { name: 'BuildMax', logo: '🏗️' },
-        { name: 'GreenEnergy', logo: '⚡' },
-        { name: 'MedCare', logo: '🏥' },
-        { name: 'EduTech', logo: '📚' },
-        { name: 'FoodChain', logo: '🍽️' },
-        { name: 'AutoParts', logo: '🚗' }
-    ];
 
     const stats = [
         { icon: Users, number: '500+', label: 'Clientes Ativos' },
@@ -128,107 +119,14 @@ const Hero = () => {
                         </div>
 
                         {/* Right Content - Visual Element */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                            className="hidden lg:flex justify-center items-center"
-                        >
-                            <div className="relative">
-                                {/* Main Circle */}
-                                <motion.div
-                                    animate={{ rotate: 360 }}
-                                    transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                                    className="w-96 h-96 rounded-full bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 opacity-20"
-                                ></motion.div>
-
-                                {/* Inner Elements */}
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <motion.div
-                                        initial={{ scale: 0 }}
-                                        animate={{ scale: 1 }}
-                                        transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                                        className="w-64 h-64 bg-white rounded-full shadow-2xl flex items-center justify-center"
-                                    >
-                                        <div className="text-center">
-                                            <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mb-4 mx-auto">
-                                                <TrendingUp className="w-10 h-10 text-white" />
-                                            </div>
-                                            <h3 className="text-xl font-bold text-gray-900 mb-2">Crescimento</h3>
-                                            <p className="text-sm text-gray-600">Garantido</p>
-                                        </div>
-                                    </motion.div>
-                                </div>
-
-                                {/* Floating Elements */}
-                                {[
-                                    { icon: Shield, position: 'top-0 left-12', delay: 0.7 },
-                                    { icon: Users, position: 'top-12 right-0', delay: 0.8 },
-                                    { icon: Award, position: 'bottom-0 right-12', delay: 0.9 },
-                                    { icon: TrendingUp, position: 'bottom-12 left-0', delay: 1.0 }
-                                ].map((item, index) => (
-                                    <motion.div
-                                        key={index}
-                                        initial={{ scale: 0, opacity: 0 }}
-                                        animate={{ scale: 1, opacity: 1 }}
-                                        transition={{ duration: 0.5, delay: item.delay }}
-                                        className={`absolute ${item.position} w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center`}
-                                    >
-                                        <item.icon className="w-8 h-8 text-blue-600" />
-                                    </motion.div>
-                                ))}
-                            </div>
-                        </motion.div>
+                        <GraphicElement3D />
 
                     </div>
                 </div>
             </div>
 
             {/* Client Logos Section */}
-            <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-                className="relative z-10 bg-white/80 backdrop-blur-sm border-t border-gray-200"
-            >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                    <div className="text-center mb-10">
-                        <h3 className="text-lg font-semibold text-gray-600 mb-8">
-                            Marcas que confiam na gente
-                        </h3>
-                    </div>
-
-                    {/* Logo Grid */}
-                    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
-                        {clientLogos.map((client, index) => (
-                            <motion.div
-                                key={client.name}
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                                whileHover={{ scale: 1.1 }}
-                                className="flex items-center justify-center group cursor-pointer"
-                            >
-                                <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-2xl grayscale group-hover:grayscale-0 transition-all duration-300 shadow-sm group-hover:shadow-md">
-                                    {client.logo}
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-
-                    {/* Animated Text */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 1.2 }}
-                        className="text-center mt-8"
-                    >
-                        <p className="text-sm text-gray-500">
-                            Junte-se a mais de 500 empresas que já elevaram seus resultados conosco
-                        </p>
-                    </motion.div>
-                </div>
-            </motion.div>
+            <InfiniteBrandsCarousel/>
         </section>
     );
 };

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 // Configuração das fontes
 const geistSans = Geist({
@@ -76,7 +77,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer será adicionado aqui futuramente */}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
