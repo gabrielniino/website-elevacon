@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/whatsapp-cta";
 
 // Configuração das fontes
 const geistSans = Geist({
@@ -75,6 +76,7 @@ export default function RootLayout({
         <main >
           {children}
         </main>
+        <WhatsAppButton />
 
         {/* Footer será adicionado aqui futuramente */}
         <Footer />
