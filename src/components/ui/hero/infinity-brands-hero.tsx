@@ -1,12 +1,35 @@
 import React from "react";
 
 const clientLogos = [
-    { name: "Google", logo: "/google.webp" },
-    { name: "Microsoft", logo: "/microsoft.webp" },
-    { name: "Aceternity", logo: "/aceternity-ui.webp" },
-    { name: "Asteroid", logo: "/asteroid-kit.webp" },
-    { name: "Gamity", logo: "/gamity.webp" },
-    { name: "Hostit", logo: "/hostit.webp" },
+    { name: "Apple", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" },
+    {
+        name: "Amazon",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+    },
+    {
+        name: "Meta",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
+    },
+    {
+        name: "Netflix",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+    },
+    {
+        name: "Tesla",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tesla_T_symbol.svg"
+    },
+    {
+        name: "Spotify",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+    },
+    {
+        name: "Microsoft",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+    },
+    {
+        name: "Google",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+    },
 ];
 
 export default function InfiniteBrandsCarousel() {
@@ -33,11 +56,11 @@ export default function InfiniteBrandsCarousel() {
                                             src={client.logo}
                                             alt={client.name}
                                             className="max-w-full max-h-full object-contain"
-                                            // onError={(e) => {
-                                            //     // Fallback para quando a imagem não carregar
-                                            //     e.target.style.display = 'none';
-                                            //     e.target.nextSibling.style.display = 'flex';
-                                            // }}
+                                        // onError={(e) => {
+                                        //     // Fallback para quando a imagem não carregar
+                                        //     e.target.style.display = 'none';
+                                        //     e.target.nextSibling.style.display = 'flex';
+                                        // }}
                                         />
                                         <div
                                             className="hidden w-full h-full items-center justify-center text-xs font-medium text-gray-600"
@@ -59,11 +82,11 @@ export default function InfiniteBrandsCarousel() {
                                             src={client.logo}
                                             alt={client.name}
                                             className="max-w-full max-h-full object-contain"
-                                            // onError={(e) => {
-                                            //     // Fallback para quando a imagem não carregar
-                                            //     e.target.style.display = 'none';
-                                            //     e.target.nextSibling.style.display = 'flex';
-                                            // }}
+                                        // onError={(e) => {
+                                        //     // Fallback para quando a imagem não carregar
+                                        //     e.target.style.display = 'none';
+                                        //     e.target.nextSibling.style.display = 'flex';
+                                        // }}
                                         />
                                         <div
                                             className="hidden w-full h-full items-center justify-center text-xs font-medium text-gray-600"
