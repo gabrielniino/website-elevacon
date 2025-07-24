@@ -14,10 +14,12 @@ const Header = () => {
             href: '#servicos',
             hasDropdown: true,
             dropdownItems: [
-                { name: 'Contabilidade', href: '#contabilidade' },
-                { name: 'Consultoria Fiscal', href: '#consultoria-fiscal' },
+                { name: 'Contabilidade Empresarial', href: '#contabilidade-empresarial' },
+                { name: 'Declarações Fiscais', href: '#declaracoes-fiscais' },
                 { name: 'Departamento Pessoal', href: '#departamento-pessoal' },
-                { name: 'Abertura de Empresas', href: '#abertura-empresas' }
+                { name: 'Consultoria Tributária', href: '#consultoria-tributaria' },
+                { name: 'Abertura de Empresas', href: '#abertura-empresas' },
+                { name: 'Análise Financeira', href: '#analise-financeira' }
             ]
         },
         { name: 'Quem Somos', href: '#quem-somos' },
@@ -110,14 +112,18 @@ const Header = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="hidden md:block"
                     >
-                        <motion.button
+                        <motion.a
+                            href="https://wa.me/5543998765432?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis%20da%20ElevaCon."
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-200"
+                            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer border-none"
                         >
                             Fale Conosco
-                        </motion.button>
+                        </motion.a>
                     </motion.div>
+
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">

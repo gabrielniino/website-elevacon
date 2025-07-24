@@ -121,7 +121,7 @@ const FAQSection = () => {
         : faqs.filter(faq => faq.category === activeCategory);
 
     return (
-        <section className="relative bg-gradient-to-br from-white via-blue-50 to-indigo-50 py-20 lg:py-32 overflow-hidden">
+        <section id="saiba-mais" className="relative bg-gradient-to-br from-white via-blue-50 to-indigo-50 py-20 lg:py-32 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-40 left-10 w-64 h-64 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>

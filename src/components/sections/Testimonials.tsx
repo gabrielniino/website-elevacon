@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
     ];
 
     return (
-        <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+        <section id="clientes" className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 right-10 w-72 h-72 bg-blue-100 rounded-full opacity-30 blur-3xl"></div>

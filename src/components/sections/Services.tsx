@@ -24,6 +24,7 @@ export default function ServicesSection() {
             id: 1,
             icon: Calculator,
             title: "Contabilidade Empresarial",
+            anchor: "contabilidade-empresarial",
             description: "Gestão completa da contabilidade da sua empresa com relatórios precisos e atualizados.",
             features: [
                 "Escrituração contábil completa",
@@ -39,6 +40,7 @@ export default function ServicesSection() {
             id: 2,
             icon: FileText,
             title: "Declarações Fiscais",
+            anchor: "declaracoes-fiscais",
             description: "Cuidamos de todas as obrigações fiscais da sua empresa com total segurança e pontualidade.",
             features: [
                 "Imposto de Renda",
@@ -54,6 +56,7 @@ export default function ServicesSection() {
             id: 3,
             icon: Users,
             title: "Departamento Pessoal",
+            anchor: "departamento-pessoal",
             description: "Gestão completa de recursos humanos e folha de pagamento para sua empresa.",
             features: [
                 "Folha de pagamento",
@@ -69,6 +72,7 @@ export default function ServicesSection() {
             id: 4,
             icon: TrendingUp,
             title: "Consultoria Tributária",
+            anchor: "consultoria-tributaria",
             description: "Otimização fiscal e planejamento tributário para reduzir custos legalmente.",
             features: [
                 "Planejamento tributário",
@@ -84,6 +88,7 @@ export default function ServicesSection() {
             id: 5,
             icon: Building2,
             title: "Abertura de Empresas",
+            anchor: "abertura-empresas",
             description: "Processo completo de constituição da sua empresa de forma rápida e segura.",
             features: [
                 "Consulta de viabilidade",
@@ -99,6 +104,7 @@ export default function ServicesSection() {
             id: 6,
             icon: PieChart,
             title: "Análise Financeira",
+            anchor: "analise-financeira",
             description: "Relatórios e análises detalhadas para tomada de decisões estratégicas.",
             features: [
                 "Fluxo de caixa",
@@ -120,7 +126,7 @@ export default function ServicesSection() {
     ];
 
     return (
-        <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+        <section id="servicos" className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0" style={{
@@ -179,6 +185,7 @@ export default function ServicesSection() {
                     {services.map((service, index) => (
                         <motion.div
                             key={service.id}
+                            id={service.anchor}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
