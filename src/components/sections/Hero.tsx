@@ -66,25 +66,29 @@ const Hero = () => {
                                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
                             >
-                                <a href="#servicos">
-                                    <motion.button
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer"
-                                    >
-                                        Começar Agora
-                                        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                    </motion.button>
-                                </a>
-                                <a href="#saiba-mais">
-                                    <motion.button
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className="bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer"
-                                    >
-                                        Saiba Mais
-                                    </motion.button>
-                                </a>
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer"
+                                    onClick={() => {
+                                        const section = document.querySelector('#servicos')
+                                        section?.scrollIntoView({ behavior: 'smooth' })
+                                    }}
+                                >
+                                    Começar Agora
+                                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                </motion.button>
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer"
+                                      onClick={() => {
+                                        const section = document.querySelector('#saiba-mais')
+                                        section?.scrollIntoView({ behavior: 'smooth' })
+                                    }}
+                                >
+                                    Saiba Mais
+                                </motion.button>
 
                             </motion.div>
 
