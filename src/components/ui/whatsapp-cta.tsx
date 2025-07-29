@@ -16,7 +16,7 @@ const WhatsAppButton = () => {
             // Mostrar tooltip após aparecer
             setTimeout(() => setShowTooltip(true), 1000);
             // Esconder tooltip após 7 segundos
-            setTimeout(() => setShowTooltip(false), 8000);
+            setTimeout(() => setShowTooltip(false), 5000);
         }, 2000);
 
         return () => clearTimeout(timer);

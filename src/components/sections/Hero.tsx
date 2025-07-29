@@ -91,16 +91,13 @@ const Hero = () => {
                                 </motion.button>
 
                             </motion.div>
-
                         </div>
-
                         {/* Right Content - Visual Element */}
                         <GraphicElement3D />
 
                     </div>
                 </div>
             </div>
-
             {/* Client Logos Section */}
             <InfiniteBrandsCarousel />
         </section>
