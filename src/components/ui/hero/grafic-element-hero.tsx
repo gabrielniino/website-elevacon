@@ -85,7 +85,7 @@ const CardItem: React.FC<CardItemProps> = ({
 
 export default function GraphicElement3D() {
     return (
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center micro-graphic">
             <CardContainer className="inter-var" data-card-container>
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
