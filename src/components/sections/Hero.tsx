@@ -64,7 +64,7 @@ const Hero = () => {
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
+                                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}

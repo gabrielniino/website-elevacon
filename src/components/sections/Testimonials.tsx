@@ -51,14 +51,14 @@ const TestimonialsSection = () => {
     ];
 
     return (
-        <section id="clientes" className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+        <section id="clientes" className="relative bg-gradient-to-br pb-10 from-slate-50 via-white to-blue-50 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 right-10 w-72 h-72 bg-blue-100 rounded-full opacity-30 blur-3xl"></div>
                 <div className="absolute bottom-40 left-10 w-96 h-96 bg-indigo-100 rounded-full opacity-20 blur-3xl"></div>
             </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-20 lg:pb-0">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -115,58 +115,7 @@ const TestimonialsSection = () => {
                     <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
                 </motion.div>
 
-                {/* Bottom CTA */}
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
-                    className="text-center mt-16"
-                >
-                    <motion.h3
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.9 }}
-                        className="text-2xl font-bold text-gray-900 mb-4"
-                    >
-                        Pronto para elevar seu negócio?
-                    </motion.h3>
-
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 1.0 }}
-                        className="text-gray-600 mb-8 max-w-2xl mx-auto"
-                    >
-                        Junte-se a centenas de empresas que já transformaram sua gestão contábil conosco.
-                    </motion.p>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 1.1 }}
-                        className="flex flex-col sm:flex-row gap-4 justify-center"
-                    >
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                        >
-                            Solicitar Proposta
-                        </motion.button>
-
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-all duration-300 shadow-sm hover:shadow-md"
-                        >
-                            Agendar Reunião
-                        </motion.button>
-                    </motion.div>
-                </motion.div>
+                
             </div>
         </section>
     );

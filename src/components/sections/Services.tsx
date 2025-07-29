@@ -126,7 +126,7 @@ export default function ServicesSection() {
     ];
 
     return (
-        <section id="servicos" className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+        <section id="servicos" className="pt-20 pb-10 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0" style={{
@@ -191,7 +191,7 @@ export default function ServicesSection() {
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             viewport={{ once: true }}
                             whileHover={{ y: -8, scale: 1.02 }}
-                            className="group cursor-pointer"
+                            className="group"
                             onClick={() => setActiveService(index)}
                         >
                             <div className={`h-full p-8 rounded-2xl border border-gray-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 ${activeService === index ? 'ring-2 ring-blue-500 shadow-2xl' : ''
@@ -243,7 +243,7 @@ export default function ServicesSection() {
 
                     <div className="relative z-10">
                         <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                            Pronto para Transformar sua Contabilidade?
+                            Pronto para elevar sua Contabilidade?
                         </h3>
                         <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                             Converse com nossos especialistas e descubra como podemos
@@ -251,22 +251,32 @@ export default function ServicesSection() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
+                            <a
+                                href="https://wa.me/5543998765432?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis%20da%20ElevaCon."
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                <span>Fale Conosco</span>
-                                <ArrowRight className="w-5 h-5" />
-                            </motion.button>
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all duration-300 flex items-center space-x-2 cursor-pointer"
+                                >
+                                    <span>Fale Conosco</span>
+                                    <ArrowRight className="w-5 h-5" />
+                                </motion.button>
+                            </a>
 
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-600 transition-all duration-300"
-                            >
-                                Solicitar Orçamento
-                            </motion.button>
+
+                            <a href="#contato">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-600 transition-all duration-300 cursor-pointer"
+                                >
+                                    Solicitar Orçamento
+                                </motion.button>
+                            </a>
+
                         </div>
                     </div>
                 </motion.div>

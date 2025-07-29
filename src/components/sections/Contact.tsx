@@ -203,14 +203,14 @@ const ContactSection = () => {
     }
 
     return (
-        <section id="contato" className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 lg:py-32 overflow-hidden">
+        <section id="contato" className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-200 rounded-full opacity-20 blur-3xl"></div>
             </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-10 lg:pt-20 lg:pb-10">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -290,8 +290,8 @@ const ContactSection = () => {
                                         onFocus={() => setFocusedField('name')}
                                         onBlur={() => setFocusedField(null)}
                                         className={`w-full pl-11 pr-4 py-4 bg-gray-50 border-2 rounded-xl focus:bg-white focus:outline-none transition-all duration-300 ${errors.name
-                                                ? 'border-red-300 focus:border-red-500'
-                                                : 'border-gray-200 focus:border-blue-500'
+                                            ? 'border-red-300 focus:border-red-500'
+                                            : 'border-gray-200 focus:border-blue-500'
                                             }`}
                                         placeholder="Seu nome completo *"
                                     />
@@ -322,8 +322,8 @@ const ContactSection = () => {
                                             onFocus={() => setFocusedField('email')}
                                             onBlur={() => setFocusedField(null)}
                                             className={`w-full pl-11 pr-4 py-4 bg-gray-50 border-2 rounded-xl focus:bg-white focus:outline-none transition-all duration-300 ${errors.email
-                                                    ? 'border-red-300 focus:border-red-500'
-                                                    : 'border-gray-200 focus:border-blue-500'
+                                                ? 'border-red-300 focus:border-red-500'
+                                                : 'border-gray-200 focus:border-blue-500'
                                                 }`}
                                             placeholder="Seu e-mail *"
                                         />
@@ -352,8 +352,8 @@ const ContactSection = () => {
                                             onFocus={() => setFocusedField('phone')}
                                             onBlur={() => setFocusedField(null)}
                                             className={`w-full pl-11 pr-4 py-4 bg-gray-50 border-2 rounded-xl focus:bg-white focus:outline-none transition-all duration-300 ${errors.phone
-                                                    ? 'border-red-300 focus:border-red-500'
-                                                    : 'border-gray-200 focus:border-blue-500'
+                                                ? 'border-red-300 focus:border-red-500'
+                                                : 'border-gray-200 focus:border-blue-500'
                                                 }`}
                                             placeholder="Seu telefone *"
                                         />
@@ -396,8 +396,8 @@ const ContactSection = () => {
                                     onFocus={() => setFocusedField('service')}
                                     onBlur={() => setFocusedField(null)}
                                     className={`w-full px-4 py-4 bg-gray-50 border-2 rounded-xl focus:bg-white focus:outline-none transition-all duration-300 appearance-none ${errors.service
-                                            ? 'border-red-300 focus:border-red-500'
-                                            : 'border-gray-200 focus:border-blue-500'
+                                        ? 'border-red-300 focus:border-red-500'
+                                        : 'border-gray-200 focus:border-blue-500'
                                         }`}
                                 >
                                     <option value="">Selecione o serviço desejado *</option>
@@ -430,8 +430,8 @@ const ContactSection = () => {
                                     onBlur={() => setFocusedField(null)}
                                     rows={4}
                                     className={`w-full px-4 py-4 bg-gray-50 border-2 rounded-xl focus:bg-white focus:outline-none transition-all duration-300 resize-none ${errors.message
-                                            ? 'border-red-300 focus:border-red-500'
-                                            : 'border-gray-200 focus:border-blue-500'
+                                        ? 'border-red-300 focus:border-red-500'
+                                        : 'border-gray-200 focus:border-blue-500'
                                         }`}
                                     placeholder="Conte-nos mais sobre suas necessidades... *"
                                 />
@@ -454,8 +454,8 @@ const ContactSection = () => {
                                 whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                                 className={`w-full py-4 px-6 rounded-xl font-semibold text-white shadow-lg transition-all duration-300 flex items-center justify-center ${isSubmitting
-                                        ? 'bg-gray-400 cursor-not-allowed'
-                                        : 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-xl'
+                                    ? 'bg-gray-400 cursor-not-allowed'
+                                    : 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-xl'
                                     }`}
                             >
                                 {isSubmitting ? (

@@ -121,14 +121,14 @@ const FAQSection = () => {
         : faqs.filter(faq => faq.category === activeCategory);
 
     return (
-        <section id="saiba-mais" className="relative bg-gradient-to-br from-white via-blue-50 to-indigo-50 py-20 lg:py-32 overflow-hidden">
+        <section id="saiba-mais" className="relative bg-gradient-to-br pb-10 from-white via-blue-50 to-indigo-50 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-40 left-10 w-64 h-64 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute bottom-40 right-10 w-80 h-80 bg-indigo-200 rounded-full opacity-20 blur-3xl"></div>
             </div>
 
-            <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-0 lg:pt-20 lg:pb-0">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
