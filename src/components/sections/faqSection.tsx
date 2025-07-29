@@ -194,8 +194,8 @@ const FAQSection = () => {
                             whileTap={{ scale: 0.95 }}
                             onClick={() => setActiveCategory(category.id)}
                             className={`flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeCategory === category.id
-                                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg'
-                                    : 'bg-white/80 text-gray-700 hover:bg-blue-50 hover:text-blue-600 shadow-sm'
+                                ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg'
+                                : 'bg-white/80 text-gray-700 hover:bg-blue-50 hover:text-blue-600 shadow-sm'
                                 }`}
                         >
                             <category.icon className="w-4 h-4 mr-2" />
@@ -275,50 +275,6 @@ const FAQSection = () => {
                             </motion.div>
                         ))}
                     </AnimatePresence>
-                </motion.div>
-
-                {/* Bottom CTA */}
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
-                    className="mt-16 text-center"
-                >
-                    <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-3xl p-8 lg:p-12 text-white">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.9 }}
-                        >
-                            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-                                Não encontrou sua resposta?
-                            </h3>
-                            <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
-                                Nossa equipe de especialistas está pronta para esclarecer todas suas dúvidas
-                                sobre contabilidade e nossos serviços.
-                            </p>
-
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                                >
-                                    Falar com Especialista
-                                </motion.button>
-
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="bg-blue-500/20 text-white px-8 py-4 rounded-xl font-semibold border-2 border-white/20 hover:border-white/40 transition-all duration-300"
-                                >
-                                    Ver Mais FAQs
-                                </motion.button>
-                            </div>
-                        </motion.div>
-                    </div>
                 </motion.div>
             </div>
         </section>

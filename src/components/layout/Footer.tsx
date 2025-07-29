@@ -19,7 +19,7 @@ export default function Footer() {
 
     const footerLinks = {
         company: [
-            { name: "Sobre nós", href: "#" },
+            { name: "Sobre nós", href: "#quem-somos" },
             { name: "Nossa equipe", href: "#" },
             { name: "Carreiras", href: "#" },
             { name: "Imprensa", href: "#" },
@@ -34,8 +34,8 @@ export default function Footer() {
         ],
         support: [
             { name: "Central de ajuda", href: "#" },
-            { name: "FAQ", href: "#" },
-            { name: "Contato", href: "#" },
+            { name: "FAQ", href: "#saiba-mais" },
+            { name: "Contato", href: "#contato" },
             { name: "Status", href: "#" },
             { name: "Comunidade", href: "#" }
         ]
@@ -43,10 +43,10 @@ export default function Footer() {
 
     const socialLinks = [
         { name: "Facebook", icon: Facebook, href: "#", color: "hover:text-blue-600" },
-        { name: "Twitter", icon: Twitter, href: "#", color: "hover:text-sky-500" },
+        // { name: "Twitter", icon: Twitter, href: "#", color: "hover:text-sky-500" },
         { name: "Instagram", icon: Instagram, href: "#", color: "hover:text-pink-600" },
-        { name: "LinkedIn", icon: Linkedin, href: "#", color: "hover:text-blue-700" },
-        { name: "YouTube", icon: Youtube, href: "#", color: "hover:text-red-600" }
+        { name: "LinkedIn", icon: Linkedin, href: "#", color: "hover:text-blue-700" }
+        // { name: "YouTube", icon: Youtube, href: "#", color: "hover:text-red-600" }
     ];
 
     return (
@@ -93,15 +93,15 @@ export default function Footer() {
                             <div className="space-y-3 mb-8">
                                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                                     <Mail className="w-4 h-4 text-blue-400" />
-                                    <span className="text-sm">contato@suamarca.com.br</span>
+                                    <span className="text-sm">elevacontabilidade@gmail.com</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                                     <Phone className="w-4 h-4 text-blue-400" />
-                                    <span className="text-sm">+55 (11) 99999-9999</span>
+                                    <span className="text-sm">+55 (43) 99999-9999</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                                     <MapPin className="w-4 h-4 text-blue-400" />
-                                    <span className="text-sm">São Paulo, SP - Brasil</span>
+                                    <span className="text-sm">Londrina, PR - Brasil</span>
                                 </div>
                             </div>
 

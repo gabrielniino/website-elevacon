@@ -72,3 +72,7 @@ projeto-site-institucional/
 ├── tailwind.config.js
 ├── next.config.js
 └── tsconfig.json
+
+
+Email Service:
+SERVICE_ID: service_pcp5hk1

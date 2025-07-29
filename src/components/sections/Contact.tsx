@@ -42,6 +42,7 @@ const ContactSection = () => {
     const [errors, setErrors] = useState<FormErrors>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [submitError, setSubmitError] = useState<string>('');
     const [focusedField, setFocusedField] = useState<string | null>(null);
 
     const services = [
@@ -119,16 +120,57 @@ const ContactSection = () => {
         return Object.keys(newErrors).length === 0;
     };
 
+    const sendEmail = async (templateParams: any) => {
+        try {
+            // Usando fetch para enviar via EmailJS REST API
+            const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    service_id: 'service_pcp5hk1', // Substitua pelo seu Service ID
+                    user_id: 'I2B9mhf1iOAtx4paB', // Substitua pelo seu Template ID
+                    template_id: 'template_mp8sb1k', // Substitua pela sua Public Key
+                    template_params: templateParams
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Falha no envio do email');
+            }
+
+            return { success: true };
+        } catch (error) {
+            console.error('Erro ao enviar email:', error);
+            throw error;
+        }
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setSubmitError('');
 
         if (!validateForm()) return;
 
         setIsSubmitting(true);
 
-        // Simular envio do formulário
         try {
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            // Preparar dados para o template do email
+            const templateParams = {
+                to_email: 'gabrielg.pereira@outlook.com',
+                from_name: formData.name,
+                from_email: formData.email,
+                phone: formData.phone,
+                company: formData.company || 'Não informado',
+                service: formData.service,
+                message: formData.message,
+                date: new Date().toLocaleDateString('pt-BR'),
+                time: new Date().toLocaleTimeString('pt-BR')
+            };
+
+            await sendEmail(templateParams);
+
             setIsSubmitted(true);
             setFormData({
                 name: '',
@@ -140,6 +182,7 @@ const ContactSection = () => {
             });
         } catch (error) {
             console.error('Erro ao enviar formulário:', error);
+            setSubmitError('Ocorreu um erro ao enviar a mensagem. Tente novamente ou entre em contato por telefone.');
         } finally {
             setIsSubmitting(false);
         }
@@ -152,6 +195,11 @@ const ContactSection = () => {
         // Limpar erro quando o usuário começar a digitar
         if (errors[name]) {
             setErrors(prev => ({ ...prev, [name]: '' }));
+        }
+
+        // Limpar erro de envio
+        if (submitError) {
+            setSubmitError('');
         }
     };
 
@@ -276,7 +324,21 @@ const ContactSection = () => {
                             </p>
                         </div>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        {submitError && (
+                            <motion.div
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                className="bg-red-50 border border-red-200 rounded-xl p-4 mb-6 flex items-start"
+                            >
+                                <AlertCircle className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
+                                <div>
+                                    <p className="text-red-700 font-medium">Erro no envio</p>
+                                    <p className="text-red-600 text-sm mt-1">{submitError}</p>
+                                </div>
+                            </motion.div>
+                        )}
+
+                        <div className="space-y-6">
                             {/* Nome */}
                             <div className="relative">
                                 <div className="relative">
@@ -294,6 +356,7 @@ const ContactSection = () => {
                                             : 'border-gray-200 focus:border-blue-500'
                                             }`}
                                         placeholder="Seu nome completo *"
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                                 {errors.name && (
@@ -326,6 +389,7 @@ const ContactSection = () => {
                                                 : 'border-gray-200 focus:border-blue-500'
                                                 }`}
                                             placeholder="Seu e-mail *"
+                                            disabled={isSubmitting}
                                         />
                                     </div>
                                     {errors.email && (
@@ -356,6 +420,7 @@ const ContactSection = () => {
                                                 : 'border-gray-200 focus:border-blue-500'
                                                 }`}
                                             placeholder="Seu telefone *"
+                                            disabled={isSubmitting}
                                         />
                                     </div>
                                     {errors.phone && (
@@ -384,6 +449,7 @@ const ContactSection = () => {
                                     onBlur={() => setFocusedField(null)}
                                     className="w-full pl-11 pr-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl focus:bg-white focus:border-blue-500 focus:outline-none transition-all duration-300"
                                     placeholder="Nome da empresa (opcional)"
+                                    disabled={isSubmitting}
                                 />
                             </div>
 
@@ -395,6 +461,7 @@ const ContactSection = () => {
                                     onChange={handleInputChange}
                                     onFocus={() => setFocusedField('service')}
                                     onBlur={() => setFocusedField(null)}
+                                    disabled={isSubmitting}
                                     className={`w-full px-4 py-4 bg-gray-50 border-2 rounded-xl focus:bg-white focus:outline-none transition-all duration-300 appearance-none ${errors.service
                                         ? 'border-red-300 focus:border-red-500'
                                         : 'border-gray-200 focus:border-blue-500'
@@ -429,6 +496,7 @@ const ContactSection = () => {
                                     onFocus={() => setFocusedField('message')}
                                     onBlur={() => setFocusedField(null)}
                                     rows={4}
+                                    disabled={isSubmitting}
                                     className={`w-full px-4 py-4 bg-gray-50 border-2 rounded-xl focus:bg-white focus:outline-none transition-all duration-300 resize-none ${errors.message
                                         ? 'border-red-300 focus:border-red-500'
                                         : 'border-gray-200 focus:border-blue-500'
@@ -449,11 +517,12 @@ const ContactSection = () => {
 
                             {/* Submit Button */}
                             <motion.button
-                                type="submit"
+                                type="button"
+                                onClick={handleSubmit}
                                 disabled={isSubmitting}
                                 whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-                                className={`w-full py-4 px-6 rounded-xl font-semibold text-white shadow-lg transition-all duration-300 flex items-center justify-center ${isSubmitting
+                                className={`w-full py-4 px-6 rounded-xl cursor-pointer font-semibold text-white shadow-lg transition-all duration-300 flex items-center justify-center ${isSubmitting
                                     ? 'bg-gray-400 cursor-not-allowed'
                                     : 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-xl'
                                     }`}
@@ -470,7 +539,8 @@ const ContactSection = () => {
                                     </>
                                 )}
                             </motion.button>
-                        </form>
+                        </div>
+
                     </motion.div>
 
                     {/* Contact Info */}
