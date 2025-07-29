@@ -251,14 +251,14 @@ const ContactSection = () => {
     }
 
     return (
-        <section id="contato" className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+        <section id="contato" className="relative bg-gradient-to-br pb-10 from-slate-50 via-white to-blue-50 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-200 rounded-full opacity-20 blur-3xl"></div>
             </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-10 lg:pt-20 lg:pb-10">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-20 lg:pb-0">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
