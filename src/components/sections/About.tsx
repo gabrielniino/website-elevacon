@@ -36,15 +36,15 @@ export default function AboutUsSection() {
                                 <Users className="w-4 h-4 mr-2" />
                                 Sobre a ElevaCon
                             </span>
-                            
+
                             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                                Transformamos a 
+                                Transformamos a
                                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"> gestão contábil</span> do seu negócio
                             </h2>
-                            
+
                             <p className="text-xl text-gray-600 leading-relaxed">
-                                Há mais de 15 anos, a ElevaCon oferece soluções contábeis inovadoras 
-                                que combinam expertise tradicional com tecnologia de ponta, ajudando 
+                                Há mais de 15 anos, a ElevaCon oferece soluções contábeis inovadoras
+                                que combinam expertise tradicional com tecnologia de ponta, ajudando
                                 empresas a crescer de forma sustentável e estratégica.
                             </p>
                         </div>
@@ -52,7 +52,7 @@ export default function AboutUsSection() {
                         {/* Values List */}
                         <div className="space-y-4">
                             {values.map((value, index) => (
-                                <div 
+                                <div
                                     key={index}
                                     className="flex items-start space-x-3 group"
                                 >
@@ -74,38 +74,34 @@ export default function AboutUsSection() {
                     </div>
 
                     {/* Right Content - Founder Box */}
-                    <div className="relative">
-                        {/* Decorative Elements */}
+                    {/* <div className="relative">
+                      
                         <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl opacity-60 rotate-12"></div>
                         <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-indigo-200 to-blue-200 rounded-2xl opacity-40 -rotate-6"></div>
-                        
-                        {/* Main Founder Card */}
+
                         <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-500">
-                            {/* Profile Image Container */}
                             <div className="relative mb-6">
                                 <div className="w-48 h-48 mx-auto bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center overflow-hidden group">
-                                    <img 
-                                        src="/perfil-ceo.enc" 
+                                    <img
+                                        src="/perfil-ceo.enc"
                                         alt="Fundador da ElevaCon"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                                        // onError={(e) => {
-                                        //     const target = e.target as HTMLImageElement;
-                                        //     target.outerHTML = `
-                                        //         <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-indigo-100">
-                                        //             <div class="text-6xl">👨‍💼</div>
-                                        //         </div>
-                                        //     `;
-                                        // }}
+                                    // onError={(e) => {
+                                    //     const target = e.target as HTMLImageElement;
+                                    //     target.outerHTML = `
+                                    //         <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-indigo-100">
+                                    //             <div class="text-6xl">👨‍💼</div>
+                                    //         </div>
+                                    //     `;
+                                    // }}
                                     />
                                 </div>
-                                
-                                {/* Status Badge */}
+
                                 <div className="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-medium shadow-lg">
                                     CEO & Fundador
                                 </div>
                             </div>
 
-                            {/* Founder Info */}
                             <div className="text-center space-y-4">
                                 <div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-1">
@@ -117,12 +113,11 @@ export default function AboutUsSection() {
                                 </div>
 
                                 <p className="text-gray-600 leading-relaxed">
-                                    "Fundei a ElevaCon com a missão de revolucionar a contabilidade 
-                                    brasileira, oferecendo soluções que realmente fazem a diferença 
+                                    "Fundei a ElevaCon com a missão de revolucionar a contabilidade
+                                    brasileira, oferecendo soluções que realmente fazem a diferença
                                     na vida dos empresários."
                                 </p>
 
-                                {/* Credentials */}
                                 <div className="flex flex-wrap justify-center gap-2 pt-4">
                                     <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
                                         CRC Ativo
@@ -135,7 +130,6 @@ export default function AboutUsSection() {
                                     </span>
                                 </div>
 
-                                {/* Social Proof */}
                                 <div className="pt-4 border-t border-gray-100">
                                     <div className="flex items-center justify-center space-x-4 text-sm text-gray-500">
                                         <div className="flex items-center">
@@ -150,7 +144,7 @@ export default function AboutUsSection() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -9,12 +9,14 @@ const Hero = () => {
 
     return (
         <section className="relative min-h-screen flex flex-col justify-between bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 overflow-hidden">
+            
             {/* Background Elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-200 rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full opacity-30 blur-3xl"></div>
             </div>
+            
 
             {/* Main Content */}
             <div className="relative z-10 flex-1 flex items-center">
@@ -54,9 +56,7 @@ const Hero = () => {
                                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                                 className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
                             >
-                                Transforme a gestão contábil da sua empresa com soluções modernas,
-                                tecnologia avançada e uma equipe especializada que entende as necessidades
-                                do seu negócio.
+                                Descomplicamos a burocracia contábil para que você foque no crescimento do seu negócio.
                             </motion.p>
 
                             {/* CTA Buttons */}
@@ -93,13 +93,13 @@ const Hero = () => {
                             </motion.div>
                         </div>
                         {/* Right Content - Visual Element */}
-                        <GraphicElement3D />
+                        {/* <GraphicElement3D /> */}
 
                     </div>
                 </div>
             </div>
             {/* Client Logos Section */}
-            <InfiniteBrandsCarousel />
+            {/* <InfiniteBrandsCarousel /> */}
         </section>
     );
 };

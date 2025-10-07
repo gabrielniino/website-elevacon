@@ -544,7 +544,7 @@ const ContactSection = () => {
                     </motion.div>
 
                     {/* Contact Info */}
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -583,7 +583,6 @@ const ContactSection = () => {
                             </motion.div>
                         ))}
 
-                        {/* CTA Card */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -600,7 +599,7 @@ const ContactSection = () => {
                                 <span>Resposta em até 24 horas</span>
                             </div>
                         </motion.div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
         </section>

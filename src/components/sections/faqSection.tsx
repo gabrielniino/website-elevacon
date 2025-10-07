@@ -41,7 +41,7 @@ const FAQSection = () => {
             category: 'geral',
             icon: Building,
             question: 'O que diferencia a ElevaCon de outras empresas de contabilidade?',
-            answer: 'A ElevaCon combina tecnologia avançada com expertise contábil, oferecendo atendimento personalizado, relatórios digitais em tempo real, e uma equipe especializada que atua como consultores estratégicos para o crescimento do seu negócio. Nosso foco está em elevar seus resultados, não apenas cumprir obrigações.'
+            answer: 'A ElevaCon une tecnologia avançada e atendimento humanizado para oferecer soluções contábeis completas. Entendemos as necessidades de cada cliente e atuamos como parceiros estratégicos, com relatórios digitais em tempo real e consultoria personalizada voltada ao crescimento do seu negócio. Nosso compromisso é elevar seus resultados, não apenas cumprir obrigações.'
         },
         {
             id: 2,
@@ -64,13 +64,13 @@ const FAQSection = () => {
             question: 'Como funciona a precificação dos serviços contábeis?',
             answer: 'Nossos preços são baseados no porte da empresa, complexidade das operações, e serviços contratados. Oferecemos pacotes mensais a partir de R$ 299 para MEIs, R$ 599 para empresas do Simples Nacional, e valores personalizados para empresas do Lucro Real. Todos os pacotes incluem suporte ilimitado e relatórios digitais.'
         },
-        {
-            id: 5,
-            category: 'prazos',
-            icon: Shield,
-            question: 'Vocês garantem o cumprimento de todos os prazos fiscais?',
-            answer: 'Sim! Temos um cronograma digital rigoroso com todas as obrigações fiscais e trabalhistas. Nossa equipe monitora constantemente os prazos e você recebe notificações automáticas. Oferecemos garantia total contra multas por atraso em obrigações sob nossa responsabilidade.'
-        },
+        // {
+        //     id: 5,
+        //     category: 'prazos',
+        //     icon: Shield,
+        //     question: 'Vocês garantem o cumprimento de todos os prazos fiscais?',
+        //     answer: 'Sim! Temos um cronograma digital rigoroso com todas as obrigações fiscais e trabalhistas. Nossa equipe monitora constantemente os prazos e você recebe notificações automáticas. Oferecemos garantia total contra multas por atraso em obrigações sob nossa responsabilidade.'
+        // },
         {
             id: 6,
             category: 'servicos',

@@ -78,7 +78,8 @@ export default function ServicesSection() {
                 "Planejamento tributário",
                 "Análise de enquadramento",
                 "Revisão de tributos",
-                "Consultoria especializada"
+                "Consultoria especializada",
+                "Parcelamentos"
             ],
             color: "from-orange-500 to-orange-600",
             bgColor: "bg-orange-50",
@@ -119,10 +120,10 @@ export default function ServicesSection() {
     ];
 
     const stats = [
-        { number: "500+", label: "Empresas Atendidas", icon: Building2 },
-        { number: "15+", label: "Anos de Experiência", icon: Award },
-        { number: "99%", label: "Satisfação dos Clientes", icon: CheckCircle },
-        { number: "24h", label: "Suporte Disponível", icon: Clock }
+        { number: "", label: "Atendimento para todo o Brasil", icon: Building2 },
+        { number: "", label: "Contadores com vasta experiência", icon: Award },
+        { number: "", label: "Atendimento Humanizado", icon: CheckCircle },
+        { number: "", label: "Satisfação dos Clientes", icon: Clock }
     ];
 
     return (
@@ -156,8 +157,7 @@ export default function ServicesSection() {
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Oferecemos serviços contábeis especializados com tecnologia avançada e
-                        atendimento personalizado para impulsionar o crescimento do seu negócio.
+                        Oferecemos serviços contábeis especializados e atendimento personalizado para impulsionar o crescimento do seu negócio.
                     </p>
                 </motion.div>
 
