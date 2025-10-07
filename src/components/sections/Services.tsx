@@ -119,12 +119,12 @@ export default function ServicesSection() {
         }
     ];
 
-    const stats = [
-        { number: "", label: "Atendimento para todo o Brasil", icon: Building2 },
-        { number: "", label: "Contadores com vasta experiência", icon: Award },
-        { number: "", label: "Atendimento Humanizado", icon: CheckCircle },
-        { number: "", label: "Satisfação dos Clientes", icon: Clock }
-    ];
+    // const stats = [
+    //     { number: "", label: "Atendimento para todo o Brasil", icon: Building2 },
+    //     { number: "", label: "Contadores com vasta experiência", icon: Award },
+    //     { number: "", label: "Atendimento Humanizado", icon: CheckCircle },
+    //     { number: "", label: "Satisfação dos Clientes", icon: Clock }
+    // ];
 
     return (
         <section id="servicos" className="pt-20 pb-10 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
@@ -162,7 +162,7 @@ export default function ServicesSection() {
                 </motion.div>
 
                 {/* Stats */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -178,7 +178,7 @@ export default function ServicesSection() {
                             <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
                         </div>
                     ))}
-                </motion.div>
+                </motion.div> */}
 
                 {/* Services Grid */}
                 <div className="grid lg:grid-cols-3 gap-8 mb-16">
