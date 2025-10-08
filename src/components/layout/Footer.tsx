@@ -79,14 +79,17 @@ export default function Footer() {
                             viewport={{ once: true }}
                             className="lg:col-span-2"
                         >
-                            <div className="mb-6">
-                                <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-                                    ElevaCon
-                                </h2>
+                            <div className="mb-6 flex flex-col items-start">
+                                <img
+                                    src="/logo-eleva-removebg.png"
+                                    alt="ElevaCon"
+                                    className="h-12 w-auto mb-4 object-contain"
+                                />
                                 <p className="text-gray-300 text-sm leading-relaxed mb-6">
                                     Descomplicamos a burocracia contábil para que você foque no crescimento do seu negócio.
                                 </p>
                             </div>
+
 
                             {/* Contact Info */}
                             <div className="space-y-3 mb-8">
