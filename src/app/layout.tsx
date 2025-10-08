@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: "ElevaCon - Soluções Contábeis",
     template: "%s | ElevaCon"
   },
-  description: "Desenvolvemos soluções digitais inovadoras que transformam negócios. Especialistas em desenvolvimento web, design UI/UX e consultoria digital.",
+  description: "Descomplicamos a burocracia contábil para que você foque no crescimento do seu negócio.",
   authors: [{ name: "ElevaCon - Desenvolvimento" }],
   creator: "ElevaCon",
   publisher: "ElevaCon",
