@@ -41,7 +41,7 @@ const FAQSection = () => {
             category: 'geral',
             icon: Building,
             question: 'O que diferencia a ElevaCon de outras empresas de contabilidade?',
-            answer: 'A ElevaCon une tecnologia avançada e atendimento humanizado para oferecer soluções contábeis completas. Entendemos as necessidades de cada cliente e atuamos como parceiros estratégicos, com relatórios digitais em tempo real e consultoria personalizada voltada ao crescimento do seu negócio. Nosso compromisso é elevar seus resultados, não apenas cumprir obrigações.'
+            answer: 'A ElevaCon oferece um atendimento humanizado, entendendo a necessidade de cada cliente.'
         },
         {
             id: 2,
@@ -62,7 +62,7 @@ const FAQSection = () => {
             category: 'custos',
             icon: Calculator,
             question: 'Como funciona a precificação dos serviços contábeis?',
-            answer: 'Nossos preços são baseados no porte da empresa, complexidade das operações, e serviços contratados. Oferecemos pacotes mensais a partir de R$ 299 para MEIs, R$ 599 para empresas do Simples Nacional, e valores personalizados para empresas do Lucro Real. Todos os pacotes incluem suporte ilimitado e relatórios digitais.'
+            answer: 'Nossos preços são baseados no porte da empresa, complexidade das operações, e serviços contratados. Oferecemos pacotes mensais a partir de R$ 299.'
         },
         // {
         //     id: 5,
@@ -83,7 +83,7 @@ const FAQSection = () => {
             category: 'geral',
             icon: Users,
             question: 'Como funciona o atendimento e suporte ao cliente?',
-            answer: 'Cada cliente tem um contador responsável dedicado e acesso ao nosso portal digital 24/7. Oferecemos suporte via WhatsApp, e-mail, telefone e reuniões presenciais ou virtuais. Nossa equipe responde dúvidas em até 4 horas e está disponível de segunda a sexta das 8h às 18h, e sábados das 8h às 12h.'
+            answer: 'Cada cliente tem um contador responsável . Oferecemos suporte via WhatsApp, e-mail, telefone e reuniões presenciais ou virtuais. Nossa equipe está disponível de segunda a sexta das 9h às 17:30h.'
         },
         {
             id: 8,
@@ -104,7 +104,7 @@ const FAQSection = () => {
             category: 'custos',
             icon: Calculator,
             question: 'Existe taxa de migração para quem vem de outro contador?',
-            answer: 'Não cobramos taxa de migração! Inclusive, oferecemos os primeiros 30 dias com desconto de 50% para novos clientes. Nossa equipe cuida gratuitamente de todo o processo de transição: análise da situação atual, coleta de documentos, e regularização de eventuais pendências deixadas pelo contador anterior.'
+            answer: 'Não cobramos taxa de migração! Nossa equipe cuida gratuitamente de todo o processo de transição: análise da situação atual, coleta de documentos, e regularização de eventuais pendências deixadas pelo contador anterior.'
         }
     ];
 

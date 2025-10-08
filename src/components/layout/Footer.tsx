@@ -19,25 +19,26 @@ export default function Footer() {
 
     const footerLinks = {
         company: [
-            { name: "Sobre nós", href: "#quem-somos" },
-            { name: "Nossa equipe", href: "#" },
-            { name: "Carreiras", href: "#" },
-            { name: "Imprensa", href: "#" },
-            { name: "Blog", href: "#" }
+            { name: "Sobre nós", href: "#quem-somos" }
+            // { name: "Nossa equipe", href: "#" },
+            // { name: "Carreiras", href: "#" },
+            // { name: "Imprensa", href: "#" },
+            // { name: "Blog", href: "#" }
         ],
         services: [
-            { name: "Consultoria", href: "#" },
-            { name: "Desenvolvimento", href: "#" },
-            { name: "Design", href: "#" },
-            { name: "Marketing", href: "#" },
-            { name: "Suporte", href: "#" }
+            { name: "Contabilidade Empresarial", href: "#contabilidade-empresarial" },
+            { name: "Declarações Fiscais", href: "#declaracoes-fiscais" },
+            { name: "Departamento Pessoal", href: "#departamento-pessoal" },
+            { name: "Consultoria Tributária", href: "#consultoria-tributaria" },
+            { name: "Abertura de Empresas", href: "#abertura-empresas" },
+            { name: "Análise Financeira", href: "#analise-financeira" }
         ],
         support: [
-            { name: "Central de ajuda", href: "#" },
+            // { name: "Central de ajuda", href: "#" },
             { name: "FAQ", href: "#saiba-mais" },
-            { name: "Contato", href: "#contato" },
-            { name: "Status", href: "#" },
-            { name: "Comunidade", href: "#" }
+            { name: "Contato", href: "#contato" }
+            // { name: "Status", href: "#" },
+            // { name: "Comunidade", href: "#" }
         ]
     };
 
@@ -83,9 +84,7 @@ export default function Footer() {
                                     ElevaCon
                                 </h2>
                                 <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                                    Transformamos ideias em soluções digitais inovadoras.
-                                    Conectamos tecnologia e criatividade para elevar seu negócio
-                                    ao próximo nível.
+                                    Descomplicamos a burocracia contábil para que você foque no crescimento do seu negócio.
                                 </p>
                             </div>
 
@@ -93,11 +92,11 @@ export default function Footer() {
                             <div className="space-y-3 mb-8">
                                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                                     <Mail className="w-4 h-4 text-blue-400" />
-                                    <span className="text-sm">elevacontabilidade@gmail.com</span>
+                                    <span className="text-sm">elevacontecnologia@gmail.com</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                                     <Phone className="w-4 h-4 text-blue-400" />
-                                    <span className="text-sm">+55 (43) 99999-9999</span>
+                                    <span className="text-sm">+55 (43) 99109-2846</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                                     <MapPin className="w-4 h-4 text-blue-400" />

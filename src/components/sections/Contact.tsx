@@ -60,32 +60,32 @@ const ContactSection = () => {
         {
             icon: Phone,
             title: 'Telefone',
-            content: '(43) 3025-4789',
-            subContent: '(43) 99876-5432',
+            content: '(43) 99109-2846',
+            // subContent: '(43) 99876-5432',
             color: 'text-green-600',
             bgColor: 'bg-green-100'
         },
         {
             icon: Mail,
             title: 'E-mail',
-            content: 'contato@elevacon.com.br',
-            subContent: 'comercial@elevacon.com.br',
+            content: 'elevacontecnologia@gmail.com',
+            // subContent: 'comercial@elevacon.com.br',
             color: 'text-blue-600',
             bgColor: 'bg-blue-100'
         },
-        {
-            icon: MapPin,
-            title: 'Endereço',
-            content: 'Av. Higienópolis, 1247',
-            subContent: 'Centro - Londrina/PR',
-            color: 'text-purple-600',
-            bgColor: 'bg-purple-100'
-        },
+        // {
+        //     icon: MapPin,
+        //     title: 'Endereço',
+        //     content: 'Av. Higienópolis, 1247',
+        //     subContent: 'Centro - Londrina/PR',
+        //     color: 'text-purple-600',
+        //     bgColor: 'bg-purple-100'
+        // },
         {
             icon: Clock,
             title: 'Horário',
-            content: 'Seg à Sex: 8h às 18h',
-            subContent: 'Sáb: 8h às 12h',
+            content: 'Seg à Sex: 9h às 17:30h',
+            // subContent: 'Sáb: 8h às 12h',
             color: 'text-orange-600',
             bgColor: 'bg-orange-100'
         }
@@ -543,8 +543,8 @@ const ContactSection = () => {
 
                     </motion.div>
 
-                    {/* Contact Info */}
-                    {/* <motion.div
+                    {/* Contact Info  */}
+                    <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -577,7 +577,7 @@ const ContactSection = () => {
                                     <div>
                                         <h4 className="font-semibold text-gray-900 mb-1">{info.title}</h4>
                                         <p className="text-gray-700 font-medium">{info.content}</p>
-                                        <p className="text-gray-600 text-sm">{info.subContent}</p>
+                                        {/* <p className="text-gray-600 text-sm">{info.subContent}</p> */}
                                     </div>
                                 </div>
                             </motion.div>
@@ -599,7 +599,7 @@ const ContactSection = () => {
                                 <span>Resposta em até 24 horas</span>
                             </div>
                         </motion.div>
-                    </motion.div> */}
+                    </motion.div>
                 </div>
             </div>
         </section>

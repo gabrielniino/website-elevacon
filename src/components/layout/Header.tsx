@@ -23,7 +23,7 @@ const Header = () => {
             ]
         },
         { name: 'Quem Somos', href: '#quem-somos' },
-        { name: 'Nossos Clientes', href: '#clientes' },
+        // { name: 'Nossos Clientes', href: '#clientes' },
         { name: 'Contato', href: '#contato' }
     ];
 
