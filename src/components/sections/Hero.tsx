@@ -1,10 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles,  } from 'lucide-react';
+import { ArrowRight, Sparkles, } from 'lucide-react';
 import Hero3DElement from '../ui/hero/element-3d';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
+    const [particles, setParticles] = useState<{ left: string; top: string }[]>([]);
+
+    useEffect(() => {
+        setParticles(
+            [...Array(20)].map(() => ({
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+            }))
+        );
+    }, []);
     return (
         <section className="relative min-h-screen flex flex-col justify-between bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 overflow-hidden">
 
@@ -20,13 +31,13 @@ const Hero = () => {
 
 
             {/* Floating Particles */}
-            {[...Array(20)].map((_, i) => (
+            {particles.map((p, i) => (
                 <motion.div
                     key={i}
-                    className="absolute w-2 h-2 bg-blue-400 rounded-full"
+                    className="absolute bg-white rounded-full"
                     style={{
-                        left: `${Math.random() * 100}%`,
-                        top: `${Math.random() * 100}%`,
+                        left: p.left,
+                        top: p.top,
                     }}
                     animate={{
                         y: [0, -30, 0],
