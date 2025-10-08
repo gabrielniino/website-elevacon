@@ -12,26 +12,17 @@ projeto-site-institucional/
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   ├── page.tsx
-│   │   ├── loading.tsx
-│   │   ├── not-found.tsx
-│   │   ├── servicos/
-│   │   │   └── page.tsx
-│   │   ├── quem-somos/
-│   │   │   └── page.tsx
-│   │   ├── clientes/
-│   │   │   └── page.tsx
-│   │   └── contato/
-│   │       └── page.tsx
 │   │
 │   ├── components/
 │   │   ├── layout/
 │   │   │   ├── Header.tsx
 │   │   │   └── Footer.tsx
 │   │   ├── ui/
-│   │   │   ├── Button.tsx
-│   │   │   ├── Card.tsx
-│   │   │   ├── Modal.tsx
-│   │   │   └── Input.tsx
+│   │   │   ├──Hero/
+│   │   │   │  ├── element-3d-hero.tsx
+│   │   │   │  └── infinity-brands-hero-3d.tsx
+│   │   │   └── animated-testimoials.tsx
+│   │   
 │   │   ├── sections/
 │   │   │   ├── Hero.tsx
 │   │   │   ├── Services.tsx
@@ -39,36 +30,27 @@ projeto-site-institucional/
 │   │   │   ├── Clients.tsx
 │   │   │   ├── Testimonials.tsx
 │   │   │   └── Contact.tsx
-│   │   └── animations/
-│   │       ├── FadeIn.tsx
-│   │       ├── SlideUp.tsx
-│   │       └── ScrollReveal.tsx
 │   │
 │   ├── lib/
-│   │   ├── utils.ts
-│   │   ├── constants.ts
-│   │   └── validations.ts
+│   │   └── utils.ts
 │   │
 │   ├── hooks/
-│   │   ├── useScrolled.ts
-│   │   ├── useWindowSize.ts
-│   │   └── useLocalStorage.ts
+│   │   └──useScrolled.ts
 │   │
 │   ├── types/
-│   │   ├── index.ts
-│   │   ├── navigation.ts
-│   │   └── components.ts
+│   │   └──index.ts 
 │   │
 │   └── constants/
-│       ├── navigation.ts
-│       ├── services.ts
-│       └── metadata.ts
+│       └── navigation.ts
 │
-├── .env.local
-├── .env.example
 ├── .gitignore
+├── components.json
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
 ├── README.md
 ├── package.json
+├── postcss.config.mjs
 ├── tailwind.config.js
 ├── next.config.js
 └── tsconfig.json
