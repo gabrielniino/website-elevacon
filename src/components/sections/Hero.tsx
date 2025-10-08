@@ -28,8 +28,6 @@ const Hero = () => {
                 }}></div>
             </div>
 
-
-
             {/* Floating Particles */}
             {particles.map((p, i) => (
                 <motion.div

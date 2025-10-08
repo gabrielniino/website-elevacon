@@ -49,14 +49,14 @@ const Header = () => {
                         className="flex-shrink-0"
                     >
                         <a href="/" className="flex items-center space-x-2">
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">E</span>
-                            </div>
-                            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                                ElevaCon
-                            </span>
+                            <img
+                                src="/logo-eleva-main-removebg.png"
+                                alt="Logo ElevaCon"
+                                className="h-16 w-auto object-contain"
+                            />
                         </a>
                     </motion.div>
+
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
